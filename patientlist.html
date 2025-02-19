@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OxiVer - Lista de Utentes</title>
+    <link rel="stylesheet" href="patientlist.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+</head>
+<body>
+
+    <div class="header">
+        <h1>OxiVer</h1>
+        <p>Menu</p>
+        <button class="logout-btn">Sair</button>
+    </div>
+
+    <div class="search-container">
+        <label for="sns-search">Lista de Utentes</label>
+        <input type="text" id="sns-search" placeholder="Número de Utente do SNS" maxlength="9">
+        <button class="search-btn"><i class="fas fa-search"></i></button>
+    </div>
+
+    <button class="add-patient-btn">+</button>
+
+    <div class="patient-list">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OxiVer Menu</title>
+  <link rel="stylesheet" href="patientlist.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#f9f1e2] font-sans">
+
+
+  <div class="flex justify-between items-center p-4">
+    <div class="text-3xl font-semibold text-[#6a4f37]">OxiVer</div>
+    <button class="bg-[#6a4f37] text-white px-4 py-2 rounded">Sair</button>
+  </div>
+
+
+  <div class="container mx-auto p-4">
+    <div class="bg-white rounded-lg shadow-md p-6">
+
+      <div class="text-xl font-semibold text-[#6a4f37] mb-4">Menu</div>
+      
+
+      <div class="flex justify-between items-center mb-6">
+        <label for="search" class="text-sm text-[#6a4f37]">Lista de Utentes</label>
+        <div class="flex items-center space-x-2">
+          <input id="search" type="text" placeholder="Número de Utente do SNS" class="border px-3 py-2 rounded-lg text-sm w-64">
+          <button class="bg-[#6a4f37] text-white p-2 rounded-full">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M8.5 3a5.5 5.5 0 1110.12 3.4l4.13 4.13a1 1 0 01-1.42 1.42l-4.13-4.13A5.5 5.5 0 018.5 3zm0 1a4.5 4.5 0 106.36 6.36A4.5 4.5 0 008.5 4z" clip-rule="evenodd" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+
+      <div class="space-y-4">
+        <div class="flex justify-between items-center p-4 bg-[#e0d9d1] rounded-lg shadow-sm">
+          <div class="flex items-center space-x-2">
+            <div class="h-8 w-8 rounded-full bg-gray-400"></div>
+            <div class="text-sm font-medium text-[#6a4f37]">Beatriz Jorge</div>
+          </div>
+          <div class="flex items-center space-x-2">
+            <span class="text-sm text-[#6a4f37]">SNS: XXXXXXXXX</span>
+            <span class="w-3.5 h-3.5 rounded-full bg-green-500"></span>
+          </div>
+        </div>
+
+        <div class="flex justify-between items-center p-4 bg-[#e0d9d1] rounded-lg shadow-sm">
+          <div class="flex items-center space-x-2">
+            <div class="h-8 w-8 rounded-full bg-gray-400"></div>
+            <div class="text-sm font-medium text-[#6a4f37]">Sofia Amado</div>
+          </div>
+          <div class="flex items-center space-x-2">
+            <span class="text-sm text-[#6a4f37]">SNS: YYYYYYYYY</span>
+            <span class="w-3.5 h-3.5 rounded-full bg-green-500"></span>
+          </div>
+        </div>
+
+        <div class="flex justify-between items-center p-4 bg-[#e0d9d1] rounded-lg shadow-sm">
+          <div class="flex items-center space-x-2">
+            <div class="h-8 w-8 rounded-full bg-gray-400"></div>
+            <div class="text-sm font-medium text-[#6a4f37]">Rodrigo Fonseca</div>
+          </div>
+          <div class="flex items-center space-x-2">
+            <span class="text-sm text-[#6a4f37]">SNS: ZZZZZZZZZ</span>
+            <span class="w-3.5 h-3.5 rounded-full bg-red-500"></span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
